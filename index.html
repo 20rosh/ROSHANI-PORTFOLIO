@@ -195,7 +195,7 @@
         <!-- Add more project-row divs as needed -->
       </div>
     </div>
-    <img src="./pics_portfolio/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    <img src="./pics_portfolio/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
   </section>
 
   <br><br>
@@ -288,34 +288,60 @@
         </div>
       </div>
     </div>
+<img src="./pics_portfolio/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#courses'" />
+
 </section>
+
+
 <section id="courses">
   <p class="section__text__p1">Certifications & Learning</p>
   <h1 class="title">Courses</h1>
   <div class="courses-container">
     <ul class="courses-list">
-      <li>
-        <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
-        Data Structures and Algorithms (Devtown)
+      <li class="course-item">
+        <span class="course-content">
+          <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
+          Data Structures and Algorithms (Devtown)
+        </span>
+        <button class="show-cert-btn" onclick="showCertificate('dsa')">Show Certificate</button>
       </li>
-      <li>
-        <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
-        Data Analytics and Visualization Job Simulation  (Accenture)
+      <li class="course-item">
+        <span class="course-content">
+          <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
+          Data Analytics and Visualization Job Simulation (Accenture)
+        </span>
+        <button class="show-cert-btn" onclick="showCertificate('accenture')">Show Certificate</button>
       </li>
-      <li>
-        <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
-        Core Concepts of C++ (Devtown)
+      <li class="course-item">
+        <span class="course-content">
+          <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
+          Core Concepts of C++ (Devtown)
+        </span>
+        <button class="show-cert-btn" onclick="showCertificate('cpp')">Show Certificate</button>
       </li>
-      <li>
-        <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
-        Data Science (Devtown)
+      <li class="course-item">
+        <span class="course-content">
+          <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
+          Data Science (Devtown)
+        </span>
+        <button class="show-cert-btn" onclick="showCertificate('ds')">Show Certificate</button>
       </li>
-      <li>
-        <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
-        Participation Certificate - Unstop Talent Park (Unstop) 
+      <li class="course-item">
+        <span class="course-content">
+          <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
+          Participation Certificate - Unstop Talent Park (Unstop)
+        </span>
+        <button class="show-cert-btn" onclick="showCertificate('unstop')">Show Certificate</button>
       </li>
-      
     </ul>
+  </div>
+
+  <!-- Certificate Modal -->
+  <div id="certificate-modal" class="certificate-modal">
+    <div class="certificate-modal-content">
+      <span class="close" onclick="closeCertificate()">&times;</span>
+      <iframe id="certificate-frame" src="" width="100%" height="90vh" style="border-radius:12px; border:none;"></iframe>
+    </div>
   </div>
 </section>  
 <section id="contact">
