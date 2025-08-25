@@ -484,7 +484,7 @@ article .icon {
 .course-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background: linear-gradient(90deg, #fbc2eb 0%, #a6c1ee 100%);
   border-radius: 12px;
   box-shadow: 0 2px 12px #6c63ff13;
@@ -494,6 +494,13 @@ article .icon {
   width: 100%;
   max-width: 600px;
   padding: 0.8rem 1.2rem;
+}
+
+.course-content {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  justify-content: flex-start;
 }
 
 /* PROJECTS SECTION */
