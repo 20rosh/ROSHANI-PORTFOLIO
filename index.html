@@ -333,8 +333,10 @@
         <button class="show-cert-btn" onclick="showCertificate('unstop')">Certificate</button>
       </li>
     </ul>
+    
   </div>
 
+  
   <!-- Certificate Modal -->
   <div id="certificate-modal" class="certificate-modal">
     <div class="certificate-modal-content">
@@ -342,7 +344,31 @@
       <iframe id="certificate-frame" src="" width="100%" height="90vh" style="border-radius:12px; border:none;"></iframe>
     </div>
   </div>
+
+  <button id="see-more-btn" onclick="toggleMoreCourses()">See More</button>
+  <div id="more-courses" style="display: none; margin-top: 1rem;">
+    <div id="hidden-courses">
+      <ul class="courses-list">
+        <li class="course-item">
+          <span class="course-content">
+            <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
+            AWS Internship Training (IStudio)
+          </span>
+          <button class="show-cert-btn" onclick="showCertificate('aws')">Certificate</button>
+        </li>
+        <li class="course-item">
+          <span class="course-content">
+            <img src="./pics_portfolio/checkmark.png" alt="check" class="course-icon" />
+           AI/ML Course (TeachMaven)
+          </span>
+          <button class="show-cert-btn" onclick="showCertificate('teachmaven')">Certificate</button>
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>  
+
+
 <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>

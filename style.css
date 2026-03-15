@@ -714,3 +714,40 @@ footer p {
   border: none;
   display: block;
 }
+
+#see-more-btn {
+  background: none;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  margin: 1.5rem auto 0;
+  display: block;
+}
+
+#see-more-btn:hover {
+  background: linear-gradient(135deg, #6c63ff, #38bdf8);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+#hidden-courses {
+  background: none;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#hidden-courses .courses-list {
+  gap: 0.8rem;
+}
