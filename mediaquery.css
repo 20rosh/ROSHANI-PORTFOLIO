@@ -138,6 +138,17 @@
     }
     .project-row {
       gap: 1.25rem;
+      width: 100%;
+    }
+    .project-row .details-container {
+      width: 100%;
+      flex-basis: 100%;
+    }
+    .project-title {
+      font-size: 1.1rem;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+      word-break: break-word;
     }
     .project-img {
       width: min(100%, 245px);
