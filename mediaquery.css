@@ -48,9 +48,20 @@
   }
   
   @media screen and (max-width: 600px) {
+    nav {
+      height: 12vh;
+      justify-content: space-between;
+      padding: 0 1.25rem;
+      box-sizing: border-box;
+    }
+    .menu-links {
+      z-index: 10;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+    }
     #contact,
     footer {
-      height: 40vh;
+      height: auto;
+      min-height: 40vh;
     }
     #profile {
       height: 83vh;
@@ -87,9 +98,18 @@
       text-align: center;
     }
     .section__pic-container {
-      width: auto;
-      height: 46vw;
+      width: min(80vw, 320px);
+      height: auto;
       justify-content: center;
+    }
+    .section__pic-container img {
+      width: 100%;
+      height: auto;
+      max-height: none;
+      object-fit: cover;
+    }
+    .about-pic {
+      aspect-ratio: 1;
     }
     .section__text__p2 {
       font-size: 1.25rem;
@@ -99,5 +119,58 @@
     }
     .text-container {
       text-align: justify;
+    }
+    section {
+      margin: 0 1.25rem;
+      padding-top: 3rem;
+    }
+    #profile {
+      height: auto;
+      min-height: 80vh;
+      gap: 2rem;
+      padding-bottom: 3rem;
+    }
+    .internship-card {
+      box-sizing: border-box;
+      min-width: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+    .project-row {
+      gap: 1.25rem;
+    }
+    .project-img {
+      width: min(100%, 245px);
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+    .details-container {
+      box-sizing: border-box;
+      min-width: 0;
+    }
+    .course-item {
+      width: 100%;
+      max-width: calc(100vw - 2.5rem);
+      box-sizing: border-box;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .show-cert-btn {
+      align-self: flex-end;
+      margin: 0;
+    }
+    .contact-info-upper-container {
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+    }
+    .contact-info-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container p {
+      overflow-wrap: anywhere;
     }
   }
